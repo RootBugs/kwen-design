@@ -873,3 +873,13 @@ ul { list-style: none; }
   .reveal { opacity: 1; transform: none; }
   .blob { animation: none; }
 }
+/* === BACK TO TOP === */
+.back-to-top {
+  position: fixed; bottom: 32px; right: 32px; width: 48px; height: 48px;
+  border-radius: 50%; background: rgba(167,139,250,0.9); color: white;
+  border: none; display: flex; align-items: center; justify-content: center;
+  cursor: pointer; z-index: 999; opacity: 0; transform: translateY(20px);
+  transition: all 0.3s ease; backdrop-filter: blur(10px);
+}
+.back-to-top.visible { opacity: 1; transform: translateY(0); }
+.back-to-top:hover { background: var(--accent-purple); transform: translateY(-2px); }
