@@ -26,6 +26,7 @@
         <div class="grid-overlay"></div>
     </div>
 
+    <!-- ============ NAVBAR ============ -->
     <nav class="navbar" aria-label="Main navigation">
         <div class="nav-container">
             <a href="#home" class="logo" aria-label="Kwen Design - Home">
@@ -42,7 +43,10 @@
                 <a href="#home" class="nav-link active" role="menuitem">Home</a>
                 <a href="#services" class="nav-link" role="menuitem">Services</a>
                 <a href="#work" class="nav-link" role="menuitem">Work</a>
+                <a href="#process" class="nav-link" role="menuitem">Process</a>
                 <a href="#about" class="nav-link" role="menuitem">About</a>
+                <a href="#pricing" class="nav-link" role="menuitem">Pricing</a>
+                <a href="#blog" class="nav-link" role="menuitem">Blog</a>
                 <a href="#contact" class="nav-link nav-cta" role="menuitem">Get in Touch</a>
             </div>
             <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navLinks">
@@ -52,11 +56,13 @@
     </nav>
 
     <main id="main">
+
+        <!-- ============ HERO ============ -->
         <section id="home" class="hero">
             <div class="hero-content">
                 <div class="hero-badge glass-card-subtle"><span class="badge-dot" aria-hidden="true"></span>Crafting Digital Experiences</div>
                 <h1 class="hero-title">We Design<br><span class="gradient-text">Digital Future</span></h1>
-                <p class="hero-subtitle">Transform your vision into stunning reality with cutting-edge design, seamless development, and unforgettable brand experiences.</p>
+                <p class="hero-subtitle">Transform your vision into stunning reality with cutting-edge design, seamless development, and unforgettable brand experiences that drive real business growth.</p>
                 <div class="hero-actions">
                     <a href="#work" class="btn btn-primary"><span>View Our Work</span><svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
                     <a href="#contact" class="btn btn-glass"><span>Start a Project</span></a>
@@ -97,211 +103,999 @@
             </div>
         </section>
 
+        <!-- ============ MARQUEE TICKER ============ -->
+        <div class="marquee-section" aria-hidden="true">
+            <div class="marquee-track">
+                <div class="marquee-content">
+                    <span>UI/UX Design</span><span class="marquee-dot">&#9679;</span>
+                    <span>Web Development</span><span class="marquee-dot">&#9679;</span>
+                    <span>Brand Identity</span><span class="marquee-dot">&#9679;</span>
+                    <span>Motion Design</span><span class="marquee-dot">&#9679;</span>
+                    <span>Mobile Apps</span><span class="marquee-dot">&#9679;</span>
+                    <span>Digital Strategy</span><span class="marquee-dot">&#9679;</span>
+                    <span>Creative Direction</span><span class="marquee-dot">&#9679;</span>
+                    <span>UI/UX Design</span><span class="marquee-dot">&#9679;</span>
+                    <span>Web Development</span><span class="marquee-dot">&#9679;</span>
+                    <span>Brand Identity</span><span class="marquee-dot">&#9679;</span>
+                    <span>Motion Design</span><span class="marquee-dot">&#9679;</span>
+                    <span>Mobile Apps</span><span class="marquee-dot">&#9679;</span>
+                    <span>Digital Strategy</span><span class="marquee-dot">&#9679;</span>
+                    <span>Creative Direction</span><span class="marquee-dot">&#9679;</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- ============ SERVICES ============ -->
         <section id="services" class="section services">
             <div class="section-container">
                 <div class="section-header">
                     <span class="section-tag glass-card-subtle">What We Do</span>
                     <h2 class="section-title">Services We <span class="gradient-text">Offer</span></h2>
-                    <p class="section-desc">From concept to launch, we deliver end-to-end digital solutions that elevate your brand and drive results.</p>
+                    <p class="section-desc">From concept to launch, we deliver end-to-end digital solutions that elevate your brand and drive measurable results.</p>
                 </div>
                 <div class="services-grid">
                     <div class="service-card glass-card" data-delay="0">
                         <div class="service-icon" aria-hidden="true"><svg width="40" height="40" viewBox="0 0 40 40" fill="none"><rect x="4" y="4" width="32" height="32" rx="8" stroke="url(#s1)" stroke-width="2"/><circle cx="20" cy="20" r="6" stroke="url(#s1)" stroke-width="2"/><path d="M20 14V4M20 36V26M14 20H4M36 20H26" stroke="url(#s1)" stroke-width="2" stroke-linecap="round"/><defs><linearGradient id="s1" x1="4" y1="4" x2="36" y2="36"><stop stop-color="#a78bfa"/><stop offset="1" stop-color="#6d28d9"/></linearGradient></defs></svg></div>
                         <h3 class="service-title">UI/UX Design</h3>
-                        <p class="service-desc">Crafting intuitive interfaces and seamless user experiences that captivate and convert.</p>
+                        <p class="service-desc">Crafting intuitive interfaces and seamless user experiences that captivate users and drive conversions. We design with empathy and data.</p>
+                        <ul class="service-features">
+                            <li>User Research &amp; Testing</li>
+                            <li>Wireframing &amp; Prototyping</li>
+                            <li>Design Systems</li>
+                            <li>Interaction Design</li>
+                        </ul>
                         <a href="#contact" class="service-link">Learn more <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
                     </div>
                     <div class="service-card glass-card" data-delay="100">
                         <div class="service-icon" aria-hidden="true"><svg width="40" height="40" viewBox="0 0 40 40" fill="none"><path d="M12 8L6 20L12 32H28L34 20L28 8H12Z" stroke="url(#s2)" stroke-width="2" stroke-linejoin="round"/><path d="M14 16L18 20L14 24M22 16L26 20L22 24" stroke="url(#s2)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><defs><linearGradient id="s2" x1="6" y1="8" x2="34" y2="32"><stop stop-color="#06b6d4"/><stop offset="1" stop-color="#0891b2"/></linearGradient></defs></svg></div>
                         <h3 class="service-title">Web Development</h3>
-                        <p class="service-desc">Building fast, responsive, and scalable web applications with modern technologies.</p>
+                        <p class="service-desc">Building fast, scalable, and beautiful websites and web applications using modern technologies and best practices.</p>
+                        <ul class="service-features">
+                            <li>React / Next.js / Vue</li>
+                            <li>Full-Stack Solutions</li>
+                            <li>API Development</li>
+                            <li>Performance Optimization</li>
+                        </ul>
                         <a href="#contact" class="service-link">Learn more <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
                     </div>
                     <div class="service-card glass-card" data-delay="200">
-                        <div class="service-icon" aria-hidden="true"><svg width="40" height="40" viewBox="0 0 40 40" fill="none"><path d="M20 4L24 14L35 15L27 23L29 34L20 29L11 34L13 23L5 15L16 14L20 4Z" stroke="url(#s3)" stroke-width="2" stroke-linejoin="round"/><defs><linearGradient id="s3" x1="5" y1="4" x2="35" y2="34"><stop stop-color="#f472b6"/><stop offset="1" stop-color="#ec4899"/></linearGradient></defs></svg></div>
+                        <div class="service-icon" aria-hidden="true"><svg width="40" height="40" viewBox="0 0 40 40" fill="none"><path d="M20 4L24 12L34 13L27 20L29 30L20 25L11 30L13 20L6 13L16 12L20 4Z" stroke="url(#s3)" stroke-width="2" stroke-linejoin="round"/><defs><linearGradient id="s3" x1="6" y1="4" x2="34" y2="34"><stop stop-color="#f472b6"/><stop offset="1" stop-color="#ec4899"/></linearGradient></defs></svg></div>
                         <h3 class="service-title">Brand Identity</h3>
-                        <p class="service-desc">Creating memorable brand identities that tell your story and connect with your audience.</p>
+                        <p class="service-desc">Creating memorable brand identities that tell your story, connect with your audience, and stand out in the market.</p>
+                        <ul class="service-features">
+                            <li>Logo Design</li>
+                            <li>Brand Guidelines</li>
+                            <li>Visual Identity Systems</li>
+                            <li>Brand Strategy</li>
+                        </ul>
                         <a href="#contact" class="service-link">Learn more <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
                     </div>
                     <div class="service-card glass-card" data-delay="300">
-                        <div class="service-icon" aria-hidden="true"><svg width="40" height="40" viewBox="0 0 40 40" fill="none"><rect x="6" y="10" width="28" height="20" rx="3" stroke="url(#s4)" stroke-width="2"/><path d="M14 18L18 22L26 14" stroke="url(#s4)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M16 6V10M24 6V10M6 16H34" stroke="url(#s4)" stroke-width="2" stroke-linecap="round"/><defs><linearGradient id="s4" x1="6" y1="6" x2="34" y2="30"><stop stop-color="#fbbf24"/><stop offset="1" stop-color="#f59e0b"/></linearGradient></defs></svg></div>
+                        <div class="service-icon" aria-hidden="true"><svg width="40" height="40" viewBox="0 0 40 40" fill="none"><rect x="8" y="4" width="24" height="32" rx="4" stroke="url(#s4)" stroke-width="2"/><path d="M16 32H24M20 28V32" stroke="url(#s4)" stroke-width="2" stroke-linecap="round"/><circle cx="20" cy="16" r="4" stroke="url(#s4)" stroke-width="2"/><path d="M12 24C12 21.7909 13.7909 20 16 20H24C26.2091 20 28 21.7909 28 24V24C28 26.2091 26.2091 28 24 28H16C13.7909 28 12 26.2091 12 24V24Z" stroke="url(#s4)" stroke-width="2"/><defs><linearGradient id="s4" x1="8" y1="4" x2="32" y2="36"><stop stop-color="#fbbf24"/><stop offset="1" stop-color="#f59e0b"/></linearGradient></defs></svg></div>
                         <h3 class="service-title">Mobile Apps</h3>
-                        <p class="service-desc">Designing and developing beautiful mobile applications for iOS and Android platforms.</p>
+                        <p class="service-desc">Native and cross-platform mobile applications that deliver exceptional user experiences on iOS and Android.</p>
+                        <ul class="service-features">
+                            <li>iOS &amp; Android Native</li>
+                            <li>React Native / Flutter</li>
+                            <li>App Store Optimization</li>
+                            <li>Push Notifications</li>
+                        </ul>
+                        <a href="#contact" class="service-link">Learn more <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+                    </div>
+                    <div class="service-card glass-card" data-delay="400">
+                        <div class="service-icon" aria-hidden="true"><svg width="40" height="40" viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="16" stroke="url(#s5)" stroke-width="2"/><path d="M14 20C14 16.6863 16.6863 14 20 14C23.3137 14 26 16.6863 26 20C26 23.3137 23.3137 26 20 26" stroke="url(#s5)" stroke-width="2" stroke-linecap="round"/><path d="M20 10V14M20 26V30M10 20H14M26 20H30" stroke="url(#s5)" stroke-width="2" stroke-linecap="round"/><defs><linearGradient id="s5" x1="4" y1="4" x2="36" y2="36"><stop stop-color="#34d399"/><stop offset="1" stop-color="#10b981"/></linearGradient></defs></svg></div>
+                        <h3 class="service-title">Motion Design</h3>
+                        <p class="service-desc">Eye-catching animations and motion graphics that bring your brand to life and enhance user engagement.</p>
+                        <ul class="service-features">
+                            <li>UI Animations</li>
+                            <li>Explainer Videos</li>
+                            <li>3D Motion Graphics</li>
+                            <li>Lottie Animations</li>
+                        </ul>
+                        <a href="#contact" class="service-link">Learn more <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+                    </div>
+                    <div class="service-card glass-card" data-delay="500">
+                        <div class="service-icon" aria-hidden="true"><svg width="40" height="40" viewBox="0 0 40 40" fill="none"><path d="M8 32V12L20 4L32 12V32" stroke="url(#s6)" stroke-width="2" stroke-linejoin="round"/><path d="M14 32V22H26V32" stroke="url(#s6)" stroke-width="2" stroke-linejoin="round"/><path d="M4 18L20 6L36 18" stroke="url(#s6)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><defs><linearGradient id="s6" x1="4" y1="4" x2="36" y2="36"><stop stop-color="#818cf8"/><stop offset="1" stop-color="#6366f1"/></linearGradient></defs></svg></div>
+                        <h3 class="service-title">Digital Strategy</h3>
+                        <p class="service-desc">Data-driven strategies that align your digital presence with business goals and maximize your ROI.</p>
+                        <ul class="service-features">
+                            <li>Market Research</li>
+                            <li>SEO &amp; Analytics</li>
+                            <li>Conversion Optimization</li>
+                            <li>Growth Hacking</li>
+                        </ul>
                         <a href="#contact" class="service-link">Learn more <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
                     </div>
                 </div>
             </div>
         </section>
 
+        <!-- ============ STATS BANNER ============ -->
+        <section class="stats-banner" aria-label="Key statistics">
+            <div class="section-container">
+                <div class="stats-grid">
+                    <div class="stat-block glass-card">
+                        <span class="stat-big-number" data-target="250">0</span>
+                        <span class="stat-big-label">Projects Completed</span>
+                        <p class="stat-detail">Across 20+ industries worldwide</p>
+                    </div>
+                    <div class="stat-block glass-card">
+                        <span class="stat-big-number" data-target="98">0</span>
+                        <span class="stat-suffix-big">%</span>
+                        <span class="stat-big-label">Client Satisfaction</span>
+                        <p class="stat-detail">Based on post-project surveys</p>
+                    </div>
+                    <div class="stat-block glass-card">
+                        <span class="stat-big-number" data-target="35">0</span>
+                        <span class="stat-big-label">Awards Won</span>
+                        <p class="stat-detail">Awwwards, CSS Design Awards &amp; more</p>
+                    </div>
+                    <div class="stat-block glass-card">
+                        <span class="stat-big-number" data-target="12">0</span>
+                        <span class="stat-big-label">Team Members</span>
+                        <p class="stat-detail">Designers, developers &amp; strategists</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ PORTFOLIO / WORK ============ -->
         <section id="work" class="section work">
             <div class="section-container">
                 <div class="section-header">
-                    <span class="section-tag glass-card-subtle">Portfolio</span>
-                    <h2 class="section-title">Featured <span class="gradient-text">Work</span></h2>
-                    <p class="section-desc">A curated selection of our latest projects showcasing creativity, innovation, and results.</p>
+                    <span class="section-tag glass-card-subtle">Our Portfolio</span>
+                    <h2 class="section-title">Selected <span class="gradient-text">Work</span></h2>
+                    <p class="section-desc">A curated collection of our finest projects — each one a unique story of creativity, strategy, and execution.</p>
+                </div>
+                <div class="work-filters">
+                    <button class="filter-btn active" data-filter="all">All Projects</button>
+                    <button class="filter-btn" data-filter="design">UI/UX Design</button>
+                    <button class="filter-btn" data-filter="development">Development</button>
+                    <button class="filter-btn" data-filter="branding">Branding</button>
+                    <button class="filter-btn" data-filter="motion">Motion</button>
                 </div>
                 <div class="work-grid">
-                    <div class="work-card glass-card work-card-large">
-                        <div class="work-image" style="background: linear-gradient(135deg, #a78bfa 0%, #06b6d4 100%);">
-                            <div class="work-overlay"><span class="work-category">Web Design</span><h3 class="work-title">Fintech Dashboard</h3><p class="work-desc">A modern banking dashboard with real-time analytics and glassmorphism UI.</p></div>
+                    <div class="work-card glass-card reveal" data-category="design">
+                        <div class="work-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                            <div class="work-overlay">
+                                <span class="work-category">UI/UX Design</span>
+                                <h3 class="work-title">Finova Banking App</h3>
+                                <p class="work-excerpt">A complete redesign of a digital banking platform serving 2M+ users.</p>
+                                <div class="work-meta">
+                                    <span>Mobile App</span>
+                                    <span>2024</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="work-card glass-card">
-                        <div class="work-image" style="background: linear-gradient(135deg, #f472b6 0%, #ec4899 100%);">
-                            <div class="work-overlay"><span class="work-category">Mobile App</span><h3 class="work-title">Fitness Tracker</h3><p class="work-desc">Health &amp; wellness app with personalized coaching.</p></div>
+                    <div class="work-card glass-card reveal" data-category="branding">
+                        <div class="work-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                            <div class="work-overlay">
+                                <span class="work-category">Branding</span>
+                                <h3 class="work-title">Luxe Cosmetics</h3>
+                                <p class="work-excerpt">Full brand identity for a premium beauty startup launching in 15 markets.</p>
+                                <div class="work-meta">
+                                    <span>Brand Identity</span>
+                                    <span>2024</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="work-card glass-card">
-                        <div class="work-image" style="background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);">
-                            <div class="work-overlay"><span class="work-category">Branding</span><h3 class="work-title">Artisan Coffee</h3><p class="work-desc">Complete brand identity for a premium coffee brand.</p></div>
+                    <div class="work-card glass-card reveal" data-category="development">
+                        <div class="work-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                            <div class="work-overlay">
+                                <span class="work-category">Development</span>
+                                <h3 class="work-title">CloudSync Dashboard</h3>
+                                <p class="work-excerpt">Real-time analytics dashboard for a SaaS platform with 50K daily users.</p>
+                                <div class="work-meta">
+                                    <span>Web Application</span>
+                                    <span>2024</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="work-card glass-card">
-                        <div class="work-image" style="background: linear-gradient(135deg, #34d399 0%, #10b981 100%);">
-                            <div class="work-overlay"><span class="work-category">E-Commerce</span><h3 class="work-title">Fashion Store</h3><p class="work-desc">Full-stack e-commerce with immersive shopping.</p></div>
+                    <div class="work-card glass-card reveal" data-category="motion">
+                        <div class="work-image" style="background: linear-gradient(135deg, #a18cd1 0%, #fbc2eb 100%);">
+                            <div class="work-overlay">
+                                <span class="work-category">Motion Design</span>
+                                <h3 class="work-title">NeoVerse Launch</h3>
+                                <p class="work-excerpt">Cinematic product launch video and motion system for a tech startup.</p>
+                                <div class="work-meta">
+                                    <span>Motion Graphics</span>
+                                    <span>2024</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="work-card glass-card">
-                        <div class="work-image" style="background: linear-gradient(135deg, #818cf8 0%, #6366f1 100%);">
-                            <div class="work-overlay"><span class="work-category">SaaS Platform</span><h3 class="work-title">AI Analytics</h3><p class="work-desc">AI-powered business intelligence dashboard.</p></div>
+                    <div class="work-card glass-card reveal" data-category="design">
+                        <div class="work-image" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);">
+                            <div class="work-overlay">
+                                <span class="work-category">UI/UX Design</span>
+                                <h3 class="work-title">EcoTrack Platform</h3>
+                                <p class="work-excerpt">Sustainability dashboard helping enterprises track carbon footprint.</p>
+                                <div class="work-meta">
+                                    <span>Web Platform</span>
+                                    <span>2024</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="work-card glass-card reveal" data-category="branding">
+                        <div class="work-image" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);">
+                            <div class="work-overlay">
+                                <span class="work-category">Branding</span>
+                                <h3 class="work-title">Harvest Kitchen</h3>
+                                <p class="work-excerpt">Organic restaurant chain brand identity and digital presence.</p>
+                                <div class="work-meta">
+                                    <span>Full Branding</span>
+                                    <span>2024</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
+        <!-- ============ PROCESS / HOW WE WORK ============ -->
+        <section id="process" class="section process">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-tag glass-card-subtle">Our Process</span>
+                    <h2 class="section-title">How We <span class="gradient-text">Work</span></h2>
+                    <p class="section-desc">A proven 6-step methodology refined over 8+ years of delivering exceptional digital experiences.</p>
+                </div>
+                <div class="process-timeline">
+                    <div class="process-step glass-card reveal">
+                        <div class="step-number">01</div>
+                        <div class="step-content">
+                            <h3>Discovery &amp; Research</h3>
+                            <p>We dive deep into your business, audience, and goals. Through stakeholder interviews, market analysis, and competitive research, we build a comprehensive understanding of your landscape.</p>
+                            <div class="step-tags">
+                                <span>Stakeholder Interviews</span>
+                                <span>Market Research</span>
+                                <span>Competitor Analysis</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="process-step glass-card reveal">
+                        <div class="step-number">02</div>
+                        <div class="step-content">
+                            <h3>Strategy &amp; Planning</h3>
+                            <p>We define the project roadmap, technical architecture, and design strategy. Every decision is backed by data and aligned with your business objectives.</p>
+                            <div class="step-tags">
+                                <span>Project Roadmap</span>
+                                <span>Technical Architecture</span>
+                                <span>Content Strategy</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="process-step glass-card reveal">
+                        <div class="step-number">03</div>
+                        <div class="step-content">
+                            <h3>Design &amp; Prototype</h3>
+                            <p>From wireframes to high-fidelity prototypes, we create designs that are both beautiful and functional. Iterative testing ensures we nail the user experience.</p>
+                            <div class="step-tags">
+                                <span>Wireframing</span>
+                                <span>UI Design</span>
+                                <span>Interactive Prototypes</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="process-step glass-card reveal">
+                        <div class="step-number">04</div>
+                        <div class="step-content">
+                            <h3>Development</h3>
+                            <p>Our engineers bring designs to life with clean, maintainable code. We use agile sprints with regular demos to keep you in the loop.</p>
+                            <div class="step-tags">
+                                <span>Frontend Dev</span>
+                                <span>Backend Dev</span>
+                                <span>API Integration</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="process-step glass-card reveal">
+                        <div class="step-number">05</div>
+                        <div class="step-content">
+                            <h3>Testing &amp; QA</h3>
+                            <p>Rigorous testing across devices, browsers, and scenarios ensures a flawless experience. We catch bugs before your users do.</p>
+                            <div class="step-tags">
+                                <span>Functional Testing</span>
+                                <span>Performance Testing</span>
+                                <span>Accessibility Audit</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="process-step glass-card reveal">
+                        <div class="step-number">06</div>
+                        <div class="step-content">
+                            <h3>Launch &amp; Support</h3>
+                            <p>We don't disappear after launch. Ongoing support, monitoring, and optimization ensure your product continues to perform at its best.</p>
+                            <div class="step-tags">
+                                <span>Deployment</span>
+                                <span>Monitoring</span>
+                                <span>Iterative Improvement</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ ABOUT ============ -->
         <section id="about" class="section about">
             <div class="section-container">
-                <div class="about-grid">
-                    <div class="about-content">
-                        <span class="section-tag glass-card-subtle">About Us</span>
-                        <h2 class="section-title">We Create <span class="gradient-text">Digital</span> Experiences</h2>
-                        <p class="about-text">At Kwen Design, we believe in the power of thoughtful design to transform businesses. Our team of designers, developers, and strategists work together to create digital experiences that are not just visually stunning, but also functionally brilliant.</p>
-                        <div class="about-features">
-                            <div class="feature-item">
-                                <div class="feature-icon glass-card-subtle" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 2L15 9L22 9L16 14L18 21L12 17L6 21L8 14L2 9L9 9L12 2Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg></div>
-                                <div><h4>Award-Winning Design</h4><p>Recognized for excellence in digital design and user experience.</p></div>
+                <div class="section-header">
+                    <span class="section-tag glass-card-subtle">About Us</span>
+                    <h2 class="section-title">The Team Behind the <span class="gradient-text">Magic</span></h2>
+                    <p class="section-desc">We're a tight-knit team of designers, developers, and strategists passionate about creating digital experiences that matter.</p>
+                </div>
+                <div class="about-content">
+                    <div class="about-text-block">
+                        <h3>Our Story</h3>
+                        <p>Founded in 2017, Kwen Design started as a two-person passion project in a small studio. Today, we're a 12-member team that has delivered over 250 projects for clients across 20+ industries. Our mission is simple: bridge the gap between visionary ideas and exceptional digital execution.</p>
+                        <p>We believe great design isn't just about aesthetics — it's about solving problems, creating connections, and driving measurable business outcomes. Every pixel, every line of code, and every strategic decision we make is guided by this philosophy.</p>
+                        <div class="about-values">
+                            <div class="value-item glass-card-subtle">
+                                <div class="value-icon">&#9672;</div>
+                                <h4>Craft Over Convention</h4>
+                                <p>We push boundaries and challenge the status quo to deliver work that stands out.</p>
                             </div>
-                            <div class="feature-item">
-                                <div class="feature-icon glass-card-subtle" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/><path d="M12 6V12L16 14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></div>
-                                <div><h4>On-Time Delivery</h4><p>We respect deadlines and deliver projects on schedule, every time.</p></div>
+                            <div class="value-item glass-card-subtle">
+                                <div class="value-icon">&#9674;</div>
+                                <h4>People First</h4>
+                                <p>Design is for humans. We center every decision around the people who will use our products.</p>
                             </div>
-                            <div class="feature-item">
-                                <div class="feature-icon glass-card-subtle" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M17 21V19C17 17.94 16.58 16.92 15.83 16.17C15.08 15.42 14.06 15 13 15H5C3.94 15 2.92 15.42 2.17 16.17C1.42 16.92 1 17.94 1 19V21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="9" cy="7" r="4" stroke="currentColor" stroke-width="2"/></svg></div>
-                                <div><h4>Dedicated Team</h4><p>A passionate team committed to bringing your vision to life.</p></div>
+                            <div class="value-item glass-card-subtle">
+                                <div class="value-icon">&#9670;</div>
+                                <h4>Relentless Quality</h4>
+                                <p>Good enough is never enough. We obsess over details until every element is perfect.</p>
                             </div>
                         </div>
                     </div>
                     <div class="about-visual">
-                        <div class="about-card glass-card">
-                            <div class="about-mockup">
-                                <div class="mockup-header"><div class="mockup-dots"><span></span><span></span><span></span></div></div>
-                                <div class="mockup-body">
-                                    <div class="mockup-line" style="width: 80%;"></div>
-                                    <div class="mockup-line" style="width: 60%;"></div>
-                                    <div class="mockup-line" style="width: 90%;"></div>
-                                    <div class="mockup-block">
-                                        <div class="mockup-color" style="background: linear-gradient(135deg, #a78bfa, #06b6d4);"></div>
-                                        <div class="mockup-color" style="background: linear-gradient(135deg, #f472b6, #ec4899);"></div>
-                                        <div class="mockup-color" style="background: linear-gradient(135deg, #34d399, #10b981);"></div>
-                                    </div>
-                                    <div class="mockup-grid"><div class="mockup-item"></div><div class="mockup-item"></div><div class="mockup-item"></div><div class="mockup-item"></div></div>
-                                </div>
+                        <div class="about-image-grid">
+                            <div class="about-img glass-card" style="background: linear-gradient(135deg, #667eea, #764ba2);">
+                                <div class="about-img-label">Studio Life</div>
                             </div>
-                            <div class="about-floating glass-card-subtle"><span class="about-float-number">98%</span><span class="about-float-label">Client Satisfaction</span></div>
+                            <div class="about-img glass-card" style="background: linear-gradient(135deg, #f093fb, #f5576c);">
+                                <div class="about-img-label">Team Collaboration</div>
+                            </div>
+                            <div class="about-img glass-card" style="background: linear-gradient(135deg, #4facfe, #00f2fe);">
+                                <div class="about-img-label">Design Sprint</div>
+                            </div>
+                            <div class="about-img glass-card" style="background: linear-gradient(135deg, #43e97b, #38f9d7);">
+                                <div class="about-img-label">Launch Day</div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="section testimonials">
+        <!-- ============ TEAM ============ -->
+        <section class="section team">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-tag glass-card-subtle">Our People</span>
+                    <h2 class="section-title">Meet the <span class="gradient-text">Team</span></h2>
+                    <p class="section-desc">The brilliant minds behind every project. Each team member brings unique expertise and a shared passion for excellence.</p>
+                </div>
+                <div class="team-grid">
+                    <div class="team-card glass-card reveal">
+                        <div class="team-avatar" style="background: linear-gradient(135deg, #a78bfa, #6d28d9);">
+                            <span class="team-initials">AK</span>
+                        </div>
+                        <h3 class="team-name">Arjun Kapoor</h3>
+                        <p class="team-role">Founder &amp; Creative Director</p>
+                        <p class="team-bio">10+ years crafting digital experiences. Previously at Google Design and IDEO.</p>
+                        <div class="team-socials">
+                            <a href="#" aria-label="LinkedIn" class="social-link">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-4 0v7h-4v-7a6 6 0 016-6zM2 9h4v12H2zM4 6a2 2 0 100-4 2 2 0 000 4z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            </a>
+                            <a href="#" aria-label="Twitter" class="social-link">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M23 3a10.9 10.9 0 01-3.14 1.53A4.48 4.48 0 0012 7.5v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="team-card glass-card reveal">
+                        <div class="team-avatar" style="background: linear-gradient(135deg, #06b6d4, #0891b2);">
+                            <span class="team-initials">PS</span>
+                        </div>
+                        <h3 class="team-name">Priya Sharma</h3>
+                        <p class="team-role">Lead UX Designer</p>
+                        <p class="team-bio">Human-centered design advocate with expertise in accessibility and design systems.</p>
+                        <div class="team-socials">
+                            <a href="#" aria-label="LinkedIn" class="social-link">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-4 0v7h-4v-7a6 6 0 016-6zM2 9h4v12H2zM4 6a2 2 0 100-4 2 2 0 000 4z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            </a>
+                            <a href="#" aria-label="Dribbble" class="social-link">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/><path d="M8.56 2.75c4.37 6.03 6.02 9.42 8.03 17.72M19.13 5.09c-3.72 2.39-6.24 3.72-10.45 5.78M2.26 12.66c5.37-1.5 9.84-1.5 15.64 0" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="team-card glass-card reveal">
+                        <div class="team-avatar" style="background: linear-gradient(135deg, #f472b6, #ec4899);">
+                            <span class="team-initials">RK</span>
+                        </div>
+                        <h3 class="team-name">Rohan Kumar</h3>
+                        <p class="team-role">Senior Developer</p>
+                        <p class="team-bio">Full-stack wizard specializing in React, Node.js, and cloud architecture.</p>
+                        <div class="team-socials">
+                            <a href="#" aria-label="LinkedIn" class="social-link">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-4 0v7h-4v-7a6 6 0 016-6zM2 9h4v12H2zM4 6a2 2 0 100-4 2 2 0 000 4z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            </a>
+                            <a href="#" aria-label="GitHub" class="social-link">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="team-card glass-card reveal">
+                        <div class="team-avatar" style="background: linear-gradient(135deg, #fbbf24, #f59e0b);">
+                            <span class="team-initials">NM</span>
+                        </div>
+                        <h3 class="team-name">Nisha Mehta</h3>
+                        <p class="team-role">Motion Designer</p>
+                        <p class="team-bio">Animation storyteller who brings interfaces to life with purposeful motion.</p>
+                        <div class="team-socials">
+                            <a href="#" aria-label="LinkedIn" class="social-link">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-4 0v7h-4v-7a6 6 0 016-6zM2 9h4v12H2zM4 6a2 2 0 100-4 2 2 0 000 4z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            </a>
+                            <a href="#" aria-label="Behance" class="social-link">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><rect x="2" y="6" width="20" height="12" rx="2" stroke="currentColor" stroke-width="2"/><path d="M6 12h4a2 2 0 100-4H6v8M14 12h4a2 2 0 100-4h-4v8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="team-card glass-card reveal">
+                        <div class="team-avatar" style="background: linear-gradient(135deg, #34d399, #10b981);">
+                            <span class="team-initials">VP</span>
+                        </div>
+                        <h3 class="team-name">Vikram Patel</h3>
+                        <p class="team-role">Strategy Lead</p>
+                        <p class="team-bio">Data-driven strategist who turns market insights into winning digital strategies.</p>
+                        <div class="team-socials">
+                            <a href="#" aria-label="LinkedIn" class="social-link">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-4 0v7h-4v-7a6 6 0 016-6zM2 9h4v12H2zM4 6a2 2 0 100-4 2 2 0 000 4z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            </a>
+                            <a href="#" aria-label="Twitter" class="social-link">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M23 3a10.9 10.9 0 01-3.14 1.53A4.48 4.48 0 0012 7.5v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="team-card glass-card reveal">
+                        <div class="team-avatar" style="background: linear-gradient(135deg, #818cf8, #6366f1);">
+                            <span class="team-initials">SJ</span>
+                        </div>
+                        <h3 class="team-name">Sara Joshi</h3>
+                        <p class="team-role">Visual Designer</p>
+                        <p class="team-bio">Pixel-perfect designer with a passion for typography, color theory, and illustration.</p>
+                        <div class="team-socials">
+                            <a href="#" aria-label="LinkedIn" class="social-link">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-4 0v7h-4v-7a6 6 0 016-6zM2 9h4v12H2zM4 6a2 2 0 100-4 2 2 0 000 4z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            </a>
+                            <a href="#" aria-label="Dribbble" class="social-link">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/><path d="M8.56 2.75c4.37 6.03 6.02 9.42 8.03 17.72M19.13 5.09c-3.72 2.39-6.24 3.72-10.45 5.78M2.26 12.66c5.37-1.5 9.84-1.5 15.64 0" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ CLIENTS / TRUSTED BY ============ -->
+        <section class="section clients">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-tag glass-card-subtle">Trusted By</span>
+                    <h2 class="section-title">Companies We've <span class="gradient-text">Worked With</span></h2>
+                    <p class="section-desc">We're proud to partner with innovative companies across industries.</p>
+                </div>
+                <div class="clients-marquee" aria-label="Client logos">
+                    <div class="clients-track">
+                        <div class="client-logo glass-card-subtle"><span>TechFlow</span></div>
+                        <div class="client-logo glass-card-subtle"><span>NeuraLab</span></div>
+                        <div class="client-logo glass-card-subtle"><span>Skyline AI</span></div>
+                        <div class="client-logo glass-card-subtle"><span>Bloom & Co</span></div>
+                        <div class="client-logo glass-card-subtle"><span>Quantum</span></div>
+                        <div class="client-logo glass-card-subtle"><span>Verde Earth</span></div>
+                        <div class="client-logo glass-card-subtle"><span>Pulse Health</span></div>
+                        <div class="client-logo glass-card-subtle"><span>Artisan</span></div>
+                        <div class="client-logo glass-card-subtle"><span>TechFlow</span></div>
+                        <div class="client-logo glass-card-subtle"><span>NeuraLab</span></div>
+                        <div class="client-logo glass-card-subtle"><span>Skyline AI</span></div>
+                        <div class="client-logo glass-card-subtle"><span>Bloom & Co</span></div>
+                        <div class="client-logo glass-card-subtle"><span>Quantum</span></div>
+                        <div class="client-logo glass-card-subtle"><span>Verde Earth</span></div>
+                        <div class="client-logo glass-card-subtle"><span>Pulse Health</span></div>
+                        <div class="client-logo glass-card-subtle"><span>Artisan</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ TESTIMONIALS ============ -->
+        <section id="testimonials" class="section testimonials">
             <div class="section-container">
                 <div class="section-header">
                     <span class="section-tag glass-card-subtle">Testimonials</span>
                     <h2 class="section-title">What Clients <span class="gradient-text">Say</span></h2>
+                    <p class="section-desc">Don't just take our word for it. Here's what our clients have to say about working with us.</p>
                 </div>
-                <div class="testimonials-track">
-                    <div class="testimonial-card glass-card">
-                        <div class="testimonial-stars" aria-label="5 out of 5 stars"><svg width="20" height="20" viewBox="0 0 20 20" fill="#fbbf24"><path d="M10 1L12.47 6.01L18 6.81L14 10.69L14.94 16.19L10 13.61L5.06 16.19L6 10.69L2 6.81L7.53 6.01L10 1Z"/></svg><svg width="20" height="20" viewBox="0 0 20 20" fill="#fbbf24"><path d="M10 1L12.47 6.01L18 6.81L14 10.69L14.94 16.19L10 13.61L5.06 16.19L6 10.69L2 6.81L7.53 6.01L10 1Z"/></svg><svg width="20" height="20" viewBox="0 0 20 20" fill="#fbbf24"><path d="M10 1L12.47 6.01L18 6.81L14 10.69L14.94 16.19L10 13.61L5.06 16.19L6 10.69L2 6.81L7.53 6.01L10 1Z"/></svg><svg width="20" height="20" viewBox="0 0 20 20" fill="#fbbf24"><path d="M10 1L12.47 6.01L18 6.81L14 10.69L14.94 16.19L10 13.61L5.06 16.19L6 10.69L2 6.81L7.53 6.01L10 1Z"/></svg><svg width="20" height="20" viewBox="0 0 20 20" fill="#fbbf24"><path d="M10 1L12.47 6.01L18 6.81L14 10.69L14.94 16.19L10 13.61L5.06 16.19L6 10.69L2 6.81L7.53 6.01L10 1Z"/></svg></div>
-                        <blockquote class="testimonial-text">&ldquo;Kwen Design transformed our entire digital presence. The attention to detail and creative vision exceeded our expectations. Highly recommended!&rdquo;</blockquote>
-                        <div class="testimonial-author"><div class="author-avatar" style="background: linear-gradient(135deg, #a78bfa, #06b6d4);">JD</div><div><strong>Jane Doe</strong><span>CEO, TechCorp</span></div></div>
+                <div class="testimonials-slider">
+                    <div class="testimonial-track" id="testimonialTrack">
+                        <div class="testimonial-card glass-card">
+                            <div class="testimonial-stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                            <blockquote class="testimonial-text">"Kwen Design completely transformed our digital presence. Their team took the time to understand our vision and delivered a product that exceeded every expectation. Revenue increased 40% within three months of launch."</blockquote>
+                            <div class="testimonial-author">
+                                <div class="author-avatar" style="background: linear-gradient(135deg, #a78bfa, #6d28d9);"><span>MR</span></div>
+                                <div class="author-info">
+                                    <strong>Marcus Reed</strong>
+                                    <span>CEO, TechFlow Inc.</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-card glass-card">
+                            <div class="testimonial-stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                            <blockquote class="testimonial-text">"The level of craftsmanship and attention to detail is unreal. They don't just design — they solve problems. Our user engagement doubled after the redesign. Best investment we've made."</blockquote>
+                            <div class="testimonial-author">
+                                <div class="author-avatar" style="background: linear-gradient(135deg, #06b6d4, #0891b2);"><span>EW</span></div>
+                                <div class="author-info">
+                                    <strong>Elena Watts</strong>
+                                    <span>Product Lead, NeuraLab</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-card glass-card">
+                            <div class="testimonial-stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                            <blockquote class="testimonial-text">"Working with Kwen felt like having an in-house design team. They were responsive, creative, and deadline-driven. Our app now has a 4.9 rating on the App Store. Can't recommend them enough!"</blockquote>
+                            <div class="testimonial-author">
+                                <div class="author-avatar" style="background: linear-gradient(135deg, #f472b6, #ec4899);"><span>DA</span></div>
+                                <div class="author-info">
+                                    <strong>David Alvarez</strong>
+                                    <span>Founder, Pulse Health</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-card glass-card">
+                            <div class="testimonial-stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                            <blockquote class="testimonial-text">"From brand strategy to execution, Kwen delivered everything on time and on brand. Their motion design work for our product launch was absolutely cinematic. Truly world-class."</blockquote>
+                            <div class="testimonial-author">
+                                <div class="author-avatar" style="background: linear-gradient(135deg, #fbbf24, #f59e0b);"><span>LN</span></div>
+                                <div class="author-info">
+                                    <strong>Lisa Nguyen</strong>
+                                    <span>CMO, Skyline AI</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="testimonial-card glass-card">
-                        <div class="testimonial-stars" aria-label="5 out of 5 stars"><svg width="20" height="20" viewBox="0 0 20 20" fill="#fbbf24"><path d="M10 1L12.47 6.01L18 6.81L14 10.69L14.94 16.19L10 13.61L5.06 16.19L6 10.69L2 6.81L7.53 6.01L10 1Z"/></svg><svg width="20" height="20" viewBox="0 0 20 20" fill="#fbbf24"><path d="M10 1L12.47 6.01L18 6.81L14 10.69L14.94 16.19L10 13.61L5.06 16.19L6 10.69L2 6.81L7.53 6.01L10 1Z"/></svg><svg width="20" height="20" viewBox="0 0 20 20" fill="#fbbf24"><path d="M10 1L12.47 6.01L18 6.81L14 10.69L14.94 16.19L10 13.61L5.06 16.19L6 10.69L2 6.81L7.53 6.01L10 1Z"/></svg><svg width="20" height="20" viewBox="0 0 20 20" fill="#fbbf24"><path d="M10 1L12.47 6.01L18 6.81L14 10.69L14.94 16.19L10 13.61L5.06 16.19L6 10.69L2 6.81L7.53 6.01L10 1Z"/></svg><svg width="20" height="20" viewBox="0 0 20 20" fill="#fbbf24"><path d="M10 1L12.47 6.01L18 6.81L14 10.69L14.94 16.19L10 13.61L5.06 16.19L6 10.69L2 6.81L7.53 6.01L10 1Z"/></svg></div>
-                        <blockquote class="testimonial-text">&ldquo;Working with Kwen was a game-changer. They delivered a product that not only looks amazing but performs flawlessly. True professionals.&rdquo;</blockquote>
-                        <div class="testimonial-author"><div class="author-avatar" style="background: linear-gradient(135deg, #f472b6, #ec4899);">MS</div><div><strong>Mike Smith</strong><span>Founder, StartupX</span></div></div>
-                    </div>
-                    <div class="testimonial-card glass-card">
-                        <div class="testimonial-stars" aria-label="5 out of 5 stars"><svg width="20" height="20" viewBox="0 0 20 20" fill="#fbbf24"><path d="M10 1L12.47 6.01L18 6.81L14 10.69L14.94 16.19L10 13.61L5.06 16.19L6 10.69L2 6.81L7.53 6.01L10 1Z"/></svg><svg width="20" height="20" viewBox="0 0 20 20" fill="#fbbf24"><path d="M10 1L12.47 6.01L18 6.81L14 10.69L14.94 16.19L10 13.61L5.06 16.19L6 10.69L2 6.81L7.53 6.01L10 1Z"/></svg><svg width="20" height="20" viewBox="0 0 20 20" fill="#fbbf24"><path d="M10 1L12.47 6.01L18 6.81L14 10.69L14.94 16.19L10 13.61L5.06 16.19L6 10.69L2 6.81L7.53 6.01L10 1Z"/></svg><svg width="20" height="20" viewBox="0 0 20 20" fill="#fbbf24"><path d="M10 1L12.47 6.01L18 6.81L14 10.69L14.94 16.19L10 13.61L5.06 16.19L6 10.69L2 6.81L7.53 6.01L10 1Z"/></svg><svg width="20" height="20" viewBox="0 0 20 20" fill="#fbbf24"><path d="M10 1L12.47 6.01L18 6.81L14 10.69L14.94 16.19L10 13.61L5.06 16.19L6 10.69L2 6.81L7.53 6.01L10 1Z"/></svg></div>
-                        <blockquote class="testimonial-text">&ldquo;The brand identity they created for us perfectly captures who we are. Our customers love the new look and our engagement has skyrocketed.&rdquo;</blockquote>
-                        <div class="testimonial-author"><div class="author-avatar" style="background: linear-gradient(135deg, #34d399, #10b981);">AL</div><div><strong>Amy Lee</strong><span>CMO, BrandCo</span></div></div>
+                    <div class="testimonial-nav">
+                        <button class="testimonial-prev" aria-label="Previous testimonial">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M12 5L7 10L12 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </button>
+                        <div class="testimonial-dots" id="testimonialDots"></div>
+                        <button class="testimonial-next" aria-label="Next testimonial">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M8 5L13 10L8 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </button>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="contact" class="section contact">
+        <!-- ============ AWARDS ============ -->
+        <section class="section awards">
             <div class="section-container">
-                <div class="contact-wrapper glass-card">
-                    <div class="contact-content">
-                        <h2 class="contact-title">Let's Create Something <span class="gradient-text">Amazing</span></h2>
-                        <p class="contact-desc">Ready to elevate your digital presence? Let's talk about your project and bring your vision to life.</p>
-                        <div class="contact-info">
-                            <div class="contact-item"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M3 5L10 11L17 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><rect x="2" y="4" width="16" height="12" rx="2" stroke="currentColor" stroke-width="1.5"/></svg><span>hello@kwendesign.com</span></div>
-                            <div class="contact-item"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M2 3h5l2 5-3 2a11 11 0 005 5l2-3 5 2v5a2 2 0 01-2 2A16 16 0 012 5a2 2 0 012-2z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span>+1 (555) 123-4567</span></div>
+                <div class="section-header">
+                    <span class="section-tag glass-card-subtle">Recognition</span>
+                    <h2 class="section-title">Awards &amp; <span class="gradient-text">Honors</span></h2>
+                    <p class="section-desc">Our work has been recognized by the industry's most prestigious awards.</p>
+                </div>
+                <div class="awards-grid">
+                    <div class="award-card glass-card reveal">
+                        <div class="award-year">2024</div>
+                        <div class="award-name">Awwwards SOTD</div>
+                        <p class="award-project">Finova Banking App</p>
+                    </div>
+                    <div class="award-card glass-card reveal">
+                        <div class="award-year">2024</div>
+                        <div class="award-name">CSS Design Awards</div>
+                        <p class="award-project">CloudSync Dashboard</p>
+                    </div>
+                    <div class="award-card glass-card reveal">
+                        <div class="award-year">2024</div>
+                        <div class="award-name">FWA Winner</div>
+                        <p class="award-project">NeoVerse Launch</p>
+                    </div>
+                    <div class="award-card glass-card reveal">
+                        <div class="award-year">2023</div>
+                        <div class="award-name">Awwwards SOTD</div>
+                        <p class="award-project">EcoTrack Platform</p>
+                    </div>
+                    <div class="award-card glass-card reveal">
+                        <div class="award-year">2023</div>
+                        <div class="award-name">Red Dot Design</div>
+                        <p class="award-project">Luxe Cosmetics Brand</p>
+                    </div>
+                    <div class="award-card glass-card reveal">
+                        <div class="award-year">2023</div>
+                        <div class="award-name">Webby Awards</div>
+                        <p class="award-project">Harvest Kitchen Site</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ PRICING ============ -->
+        <section id="pricing" class="section pricing">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-tag glass-card-subtle">Pricing</span>
+                    <h2 class="section-title">Transparent <span class="gradient-text">Pricing</span></h2>
+                    <p class="section-desc">Clear, honest pricing with no hidden fees. Choose the plan that fits your needs.</p>
+                </div>
+                <div class="pricing-grid">
+                    <div class="pricing-card glass-card reveal">
+                        <div class="pricing-header">
+                            <h3 class="pricing-plan">Starter</h3>
+                            <p class="pricing-tagline">Perfect for small projects</p>
+                        </div>
+                        <div class="pricing-price">
+                            <span class="pricing-currency">$</span>
+                            <span class="pricing-amount">2,500</span>
+                            <span class="pricing-period">/ project</span>
+                        </div>
+                        <ul class="pricing-features">
+                            <li><span class="check">&#10003;</span> Landing Page Design</li>
+                            <li><span class="check">&#10003;</span> Responsive Design</li>
+                            <li><span class="check">&#10003;</span> Basic SEO Setup</li>
+                            <li><span class="check">&#10003;</span> 2 Revision Rounds</li>
+                            <li><span class="check">&#10003;</span> 1 Week Delivery</li>
+                            <li class="disabled"><span class="cross">&#10005;</span> Custom Animations</li>
+                            <li class="disabled"><span class="cross">&#10005;</span> CMS Integration</li>
+                            <li class="disabled"><span class="cross">&#10005;</span> Ongoing Support</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-glass pricing-btn">Get Started</a>
+                    </div>
+                    <div class="pricing-card glass-card pricing-popular reveal">
+                        <div class="pricing-badge">Most Popular</div>
+                        <div class="pricing-header">
+                            <h3 class="pricing-plan">Professional</h3>
+                            <p class="pricing-tagline">For growing businesses</p>
+                        </div>
+                        <div class="pricing-price">
+                            <span class="pricing-currency">$</span>
+                            <span class="pricing-amount">7,500</span>
+                            <span class="pricing-period">/ project</span>
+                        </div>
+                        <ul class="pricing-features">
+                            <li><span class="check">&#10003;</span> Multi-page Website</li>
+                            <li><span class="check">&#10003;</span> Custom UI/UX Design</li>
+                            <li><span class="check">&#10003;</span> Advanced SEO</li>
+                            <li><span class="check">&#10003;</span> 4 Revision Rounds</li>
+                            <li><span class="check">&#10003;</span> Custom Animations</li>
+                            <li><span class="check">&#10003;</span> CMS Integration</li>
+                            <li><span class="check">&#10003;</span> 3 Months Support</li>
+                            <li class="disabled"><span class="cross">&#10005;</span> E-commerce</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-primary pricing-btn">Get Started</a>
+                    </div>
+                    <div class="pricing-card glass-card reveal">
+                        <div class="pricing-header">
+                            <h3 class="pricing-plan">Enterprise</h3>
+                            <p class="pricing-tagline">For large-scale projects</p>
+                        </div>
+                        <div class="pricing-price">
+                            <span class="pricing-currency">$</span>
+                            <span class="pricing-amount">15,000+</span>
+                            <span class="pricing-period">/ project</span>
+                        </div>
+                        <ul class="pricing-features">
+                            <li><span class="check">&#10003;</span> Full Custom Solution</li>
+                            <li><span class="check">&#10003;</span> Enterprise UX Research</li>
+                            <li><span class="check">&#10003;</span> Technical Architecture</li>
+                            <li><span class="check">&#10003;</span> Unlimited Revisions</li>
+                            <li><span class="check">&#10003;</span> E-commerce &amp; API</li>
+                            <li><span class="check">&#10003;</span> Design System</li>
+                            <li><span class="check">&#10003;</span> Priority Support</li>
+                            <li><span class="check">&#10003;</span> Dedicated Team</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-glass pricing-btn">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ FAQ ============ -->
+        <section id="faq" class="section faq">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-tag glass-card-subtle">FAQ</span>
+                    <h2 class="section-title">Frequently Asked <span class="gradient-text">Questions</span></h2>
+                    <p class="section-desc">Got questions? We've got answers. If you don't find what you're looking for, feel free to contact us.</p>
+                </div>
+                <div class="faq-list">
+                    <div class="faq-item glass-card reveal">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>How long does a typical project take?</span>
+                            <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Project timelines vary based on scope and complexity. A landing page typically takes 1-2 weeks, a multi-page website 4-6 weeks, and a full-scale web application 2-4 months. We provide a detailed timeline during the discovery phase and stick to it.</p>
                         </div>
                     </div>
-                    <form class="contact-form" id="contactForm" novalidate>
+                    <div class="faq-item glass-card reveal">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>What technologies do you work with?</span>
+                            <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p>We work with a wide range of modern technologies including React, Next.js, Vue.js, Node.js, Python, PostgreSQL, MongoDB, and cloud platforms like AWS and Vercel. We choose the best tech stack for each project's specific needs.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item glass-card reveal">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>Do you work with startups or only established businesses?</span>
+                            <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p>We work with businesses of all sizes — from early-stage startups to Fortune 500 enterprises. Our flexible pricing and scalable processes allow us to adapt to any project scope and budget.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item glass-card reveal">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>What does your post-launch support include?</span>
+                            <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Post-launch support includes bug fixes, performance monitoring, security updates, content updates, and analytics reporting. We offer monthly retainer plans for ongoing support or project-based maintenance packages.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item glass-card reveal">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>Can you work with our existing design system?</span>
+                            <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Absolutely. We regularly work within existing design systems and brand guidelines. We can also help extend or improve your current system to ensure consistency across all touchpoints.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item glass-card reveal">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>How do you handle project communication?</span>
+                            <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p>We use a combination of Slack for daily communication, weekly video calls for progress reviews, and project management tools like Notion or Linear for task tracking. You'll always know exactly where your project stands.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item glass-card reveal">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>What's your payment structure?</span>
+                            <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p>We typically split payments into three milestones: 30% upfront to begin, 40% at the design approval stage, and 30% upon final delivery. For larger projects, we can customize the payment schedule to fit your budget.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ BLOG ============ -->
+        <section id="blog" class="section blog">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-tag glass-card-subtle">Our Blog</span>
+                    <h2 class="section-title">Latest <span class="gradient-text">Insights</span></h2>
+                    <p class="section-desc">Thoughts on design, technology, and the future of digital experiences.</p>
+                </div>
+                <div class="blog-grid">
+                    <article class="blog-card glass-card reveal">
+                        <div class="blog-image" style="background: linear-gradient(135deg, #667eea, #764ba2);">
+                            <span class="blog-category">Design</span>
+                        </div>
+                        <div class="blog-content">
+                            <time class="blog-date">June 5, 2025</time>
+                            <h3 class="blog-title">The Future of Glassmorphism: Beyond the Blur</h3>
+                            <p class="blog-excerpt">Glassmorphism has evolved from a trend to a design staple. Here's how to use it effectively without sacrificing usability.</p>
+                            <a href="#" class="blog-link">Read Article <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+                        </div>
+                    </article>
+                    <article class="blog-card glass-card reveal">
+                        <div class="blog-image" style="background: linear-gradient(135deg, #06b6d4, #0891b2);">
+                            <span class="blog-category">Development</span>
+                        </div>
+                        <div class="blog-content">
+                            <time class="blog-date">May 28, 2025</time>
+                            <h3 class="blog-title">Why We Switched to Next.js and Never Looked Back</h3>
+                            <p class="blog-excerpt">Our journey migrating from Create React App to Next.js — the performance gains, DX improvements, and lessons learned.</p>
+                            <a href="#" class="blog-link">Read Article <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+                        </div>
+                    </article>
+                    <article class="blog-card glass-card reveal">
+                        <div class="blog-image" style="background: linear-gradient(135deg, #f472b6, #ec4899);">
+                            <span class="blog-category">Strategy</span>
+                        </div>
+                        <div class="blog-content">
+                            <time class="blog-date">May 15, 2025</time>
+                            <h3 class="blog-title">Design Systems at Scale: Lessons from 50+ Projects</h3>
+                            <p class="blog-excerpt">Building a design system is easy. Maintaining one across 50+ projects? That's where the real challenge begins.</p>
+                            <a href="#" class="blog-link">Read Article <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ NEWSLETTER / CTA ============ -->
+        <section class="section newsletter">
+            <div class="section-container">
+                <div class="newsletter-card glass-card">
+                    <div class="newsletter-content">
+                        <h2 class="newsletter-title">Stay in the <span class="gradient-text">Loop</span></h2>
+                        <p class="newsletter-desc">Get weekly insights on design trends, development tips, and industry news. No spam, ever.</p>
+                        <form class="newsletter-form" id="newsletterForm" aria-label="Newsletter signup">
+                            <div class="newsletter-input-group">
+                                <input type="email" placeholder="Enter your email" required aria-label="Email address" class="newsletter-input">
+                                <button type="submit" class="btn btn-primary newsletter-btn">
+                                    <span>Subscribe</span>
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M2 8H14M14 8L9 3M14 8L9 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                </button>
+                            </div>
+                            <p class="newsletter-status" id="newsletterStatus" aria-live="polite"></p>
+                        </form>
+                    </div>
+                    <div class="newsletter-decoration" aria-hidden="true">
+                        <div class="newsletter-blob"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ BIG CTA ============ -->
+        <section id="contact" class="section cta-section">
+            <div class="section-container">
+                <div class="cta-content">
+                    <span class="section-tag glass-card-subtle">Let's Talk</span>
+                    <h2 class="cta-title">Ready to Build Something<br><span class="gradient-text">Extraordinary?</span></h2>
+                    <p class="cta-desc">Whether you have a detailed brief or just a spark of an idea, we'd love to hear from you. Let's turn your vision into a digital masterpiece.</p>
+                    <div class="cta-actions">
+                        <a href="mailto:hello@kwendesign.com" class="btn btn-primary btn-large"><span>Send Us an Email</span><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M4 4H16V16H4V4Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M4 4L10 10L16 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+                        <a href="#" class="btn btn-glass btn-large"><span>Book a Free Call</span></a>
+                    </div>
+                    <div class="cta-contact-info">
+                        <div class="contact-item glass-card-subtle">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M3 7L10 12L17 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><rect x="2" y="4" width="16" height="12" rx="2" stroke="currentColor" stroke-width="2"/></svg>
+                            <span>hello@kwendesign.com</span>
+                        </div>
+                        <div class="contact-item glass-card-subtle">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M3 4H7L9 8L6.5 9.5C7.57 11.57 9.43 13.43 11.5 14.5L13 12L17 14V18C17 18 14 19 9 14C4 9 3 4 3 4Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            <span>+91 98765 43210</span>
+                        </div>
+                        <div class="contact-item glass-card-subtle">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M10 10C11.66 10 13 8.66 13 7C13 5.34 11.66 4 10 4C8.34 4 7 5.34 7 7C7 8.66 8.34 10 10 10Z" stroke="currentColor" stroke-width="2"/><path d="M10 18C10 18 16 13 16 8C16 4.69 13.31 2 10 2C6.69 2 4 4.69 4 8C4 13 10 18 10 18Z" stroke="currentColor" stroke-width="2"/></svg>
+                            <span>Mumbai, India</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form-wrapper glass-card">
+                    <h3>Send a Message</h3>
+                    <form class="contact-form" id="contactForm" novalidate aria-label="Contact form">
                         <div class="form-group">
                             <label for="contactName" class="sr-only">Your Name</label>
                             <input type="text" id="contactName" name="name" placeholder="Your Name" required autocomplete="name">
-                            <span class="form-error" id="nameError"></span>
+                            <span class="form-error" id="nameError" aria-live="polite"></span>
                         </div>
                         <div class="form-group">
                             <label for="contactEmail" class="sr-only">Your Email</label>
                             <input type="email" id="contactEmail" name="email" placeholder="Your Email" required autocomplete="email">
-                            <span class="form-error" id="emailError"></span>
+                            <span class="form-error" id="emailError" aria-live="polite"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="contactService" class="sr-only">Service Interest</label>
+                            <select id="contactService" name="service" required>
+                                <option value="" disabled selected>Select a Service</option>
+                                <option value="uiux">UI/UX Design</option>
+                                <option value="webdev">Web Development</option>
+                                <option value="branding">Brand Identity</option>
+                                <option value="mobile">Mobile App</option>
+                                <option value="motion">Motion Design</option>
+                                <option value="strategy">Digital Strategy</option>
+                                <option value="other">Other</option>
+                            </select>
+                            <span class="form-error" id="serviceError" aria-live="polite"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="contactBudget" class="sr-only">Budget Range</label>
+                            <select id="contactBudget" name="budget">
+                                <option value="" disabled selected>Budget Range (Optional)</option>
+                                <option value="2-5k">$2,500 - $5,000</option>
+                                <option value="5-10k">$5,000 - $10,000</option>
+                                <option value="10-25k">$10,000 - $25,000</option>
+                                <option value="25k+">$25,000+</option>
+                            </select>
                         </div>
                         <div class="form-group">
                             <label for="contactMessage" class="sr-only">Your Message</label>
-                            <textarea id="contactMessage" name="message" placeholder="Tell us about your project..." rows="4" required></textarea>
-                            <span class="form-error" id="messageError"></span>
+                            <textarea id="contactMessage" name="message" placeholder="Tell us about your project..." rows="5" required></textarea>
+                            <span class="form-error" id="messageError" aria-live="polite"></span>
                         </div>
-                        <div class="form-status" id="formStatus" role="status" aria-live="polite"></div>
-                        <button type="submit" class="btn btn-primary btn-full" id="submitBtn"><span>Send Message</span><svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M17 3L9 11M17 3L12 17L9 11M17 3L3 8L9 11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+                        <button type="submit" class="btn btn-primary form-submit" id="submitBtn">
+                            <span>Send Message</span>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M2 10L18 2L10 18L8 12L2 10Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </button>
+                        <p class="form-status" id="formStatus" aria-live="polite"></p>
                     </form>
                 </div>
             </div>
         </section>
+
     </main>
 
-    <footer class="footer" role="contentinfo">
+    <!-- ============ FOOTER ============ -->
+    <footer class="footer">
         <div class="footer-container">
             <div class="footer-top">
                 <div class="footer-brand">
                     <a href="#home" class="logo" aria-label="Kwen Design - Home">
-                        <div class="logo-icon"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true"><rect x="2" y="2" width="28" height="28" rx="8" stroke="url(#logoGrad2)" stroke-width="2.5"/><path d="M10 22V10L16 16L22 10V22" stroke="url(#logoGrad2)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><defs><linearGradient id="logoGrad2" x1="0" y1="0" x2="32" y2="32"><stop stop-color="#a78bfa"/><stop offset="1" stop-color="#06b6d4"/></linearGradient></defs></svg></div>
+                        <div class="logo-icon">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+                                <rect x="2" y="2" width="28" height="28" rx="8" stroke="url(#logoGrad2)" stroke-width="2.5"/>
+                                <path d="M10 22V10L16 16L22 10V22" stroke="url(#logoGrad2)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <defs><linearGradient id="logoGrad2" x1="0" y1="0" x2="32" y2="32"><stop stop-color="#a78bfa"/><stop offset="1" stop-color="#06b6d4"/></linearGradient></defs>
+                            </svg>
+                        </div>
                         <span class="logo-text">Kwen Design</span>
                     </a>
-                    <p class="footer-desc">Crafting digital experiences that inspire and deliver results.</p>
+                    <p class="footer-tagline">Crafting digital experiences that inspire, engage, and deliver measurable results. Based in Mumbai, working globally.</p>
+                    <div class="footer-socials">
+                        <a href="#" aria-label="Twitter" class="social-link"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M23 3a10.9 10.9 0 01-3.14 1.53A4.48 4.48 0 0012 7.5v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+                        <a href="#" aria-label="Instagram" class="social-link"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor"/></svg></a>
+                        <a href="#" aria-label="LinkedIn" class="social-link"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-4 0v7h-4v-7a6 6 0 016-6zM2 9h4v12H2zM4 6a2 2 0 100-4 2 2 0 000 4z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+                        <a href="#" aria-label="Dribbble" class="social-link"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/><path d="M8.56 2.75c4.37 6.03 6.02 9.42 8.03 17.72M19.13 5.09c-3.72 2.39-6.24 3.72-10.45 5.78M2.26 12.66c5.37-1.5 9.84-1.5 15.64 0" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+                        <a href="#" aria-label="GitHub" class="social-link"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+                    </div>
                 </div>
-                <div class="footer-links">
-                    <div class="footer-col"><h4>Services</h4><a href="#services">UI/UX Design</a><a href="#services">Web Development</a><a href="#services">Brand Identity</a><a href="#services">Mobile Apps</a></div>
-                    <div class="footer-col"><h4>Company</h4><a href="#about">About Us</a><a href="#contact">Careers</a><a href="#contact">Blog</a><a href="#contact">Contact</a></div>
-                    <div class="footer-col"><h4>Connect</h4><a href="https://twitter.com" target="_blank" rel="noopener noreferrer">Twitter / X</a><a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a><a href="https://dribbble.com" target="_blank" rel="noopener noreferrer">Dribbble</a><a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a></div>
+                <div class="footer-links-grid">
+                    <div class="footer-links-col">
+                        <h4>Services</h4>
+                        <a href="#services">UI/UX Design</a>
+                        <a href="#services">Web Development</a>
+                        <a href="#services">Brand Identity</a>
+                        <a href="#services">Mobile Apps</a>
+                        <a href="#services">Motion Design</a>
+                        <a href="#services">Digital Strategy</a>
+                    </div>
+                    <div class="footer-links-col">
+                        <h4>Company</h4>
+                        <a href="#about">About Us</a>
+                        <a href="#work">Portfolio</a>
+                        <a href="#blog">Blog</a>
+                        <a href="#testimonials">Testimonials</a>
+                        <a href="#faq">FAQ</a>
+                        <a href="#pricing">Pricing</a>
+                    </div>
+                    <div class="footer-links-col">
+                        <h4>Contact</h4>
+                        <a href="mailto:hello@kwendesign.com">hello@kwendesign.com</a>
+                        <a href="tel:+919876543210">+91 98765 43210</a>
+                        <a href="#">Mumbai, India</a>
+                        <a href="#">Google Maps</a>
+                    </div>
                 </div>
             </div>
             <div class="footer-bottom">
-                <span>&copy; 2026 Kwen Design. All rights reserved.</span>
-                <div class="footer-socials">
-                    <a href="https://twitter.com" class="social-link glass-card-subtle" aria-label="Follow us on Twitter" target="_blank" rel="noopener noreferrer"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M22 4s-1.17.71-2 1.01A4.24 4.24 0 0012 8v1A10.16 10.16 0 013 4s-4 9 5 13a11.29 11.29 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0022 4z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
-                    <a href="https://linkedin.com" class="social-link glass-card-subtle" aria-label="Connect on LinkedIn" target="_blank" rel="noopener noreferrer"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="4" cy="4" r="2" stroke="currentColor" stroke-width="2"/></svg></a>
-                    <a href="https://instagram.com" class="social-link glass-card-subtle" aria-label="Follow on Instagram" target="_blank" rel="noopener noreferrer"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor"/></svg></a>
+                <p>&copy; 2025 Kwen Design. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Sitemap</a>
                 </div>
             </div>
         </div>
     </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
