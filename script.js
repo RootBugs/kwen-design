@@ -154,7 +154,31 @@
         var rect = card.getBoundingClientRect();
         var x = (e.clientX - rect.left) / rect.width - 0.5;
         var y = (e.clientY - rect.top) / rect.height - 0.5;
-        card.style.transform = 'translateY(-6px) rotateY(' + (x * 8) + 'deg) rotateX(' + (-y * 8) + 'deg)';
+        card.style.transform = 'translateY(-8px) rotateY(' + (x * 8) + 'deg) rotateX(' + (-y * 8) + 'deg)';
+      });
+      card.addEventListener('mouseleave', function() {
+        card.style.transform = '';
+      });
+    });
+    // Tech card tilt
+    document.querySelectorAll('.tech-category').forEach(function(card) {
+      card.addEventListener('mousemove', function(e) {
+        var rect = card.getBoundingClientRect();
+        var x = (e.clientX - rect.left) / rect.width - 0.5;
+        var y = (e.clientY - rect.top) / rect.height - 0.5;
+        card.style.transform = 'translateY(-4px) rotateY(' + (x * 6) + 'deg) rotateX(' + (-y * 6) + 'deg)';
+      });
+      card.addEventListener('mouseleave', function() {
+        card.style.transform = '';
+      });
+    });
+    // Case study card tilt
+    document.querySelectorAll('.case-card').forEach(function(card) {
+      card.addEventListener('mousemove', function(e) {
+        var rect = card.getBoundingClientRect();
+        var x = (e.clientX - rect.left) / rect.width - 0.5;
+        var y = (e.clientY - rect.top) / rect.height - 0.5;
+        card.style.transform = 'translateY(-4px) rotateY(' + (x * 5) + 'deg) rotateX(' + (-y * 5) + 'deg)';
       });
       card.addEventListener('mouseleave', function() {
         card.style.transform = '';
@@ -173,10 +197,8 @@
       workCards.forEach(function(card) {
         if (filter === 'all' || card.getAttribute('data-category') === filter) {
           card.classList.remove('hidden');
-          card.style.display = '';
         } else {
           card.classList.add('hidden');
-          card.style.display = 'none';
         }
       });
     });
@@ -190,7 +212,6 @@
     var currentTestimonial = 0;
     var totalTestimonials = testimonialCards.length;
 
-    // Create dots
     for (var i = 0; i < totalTestimonials; i++) {
       var dot = document.createElement('button');
       dot.className = 'testimonial-dot' + (i === 0 ? ' active' : '');
@@ -218,7 +239,6 @@
       goToTestimonial(currentTestimonial < totalTestimonials - 1 ? currentTestimonial + 1 : 0);
     });
 
-    // Auto-advance
     if (!prefersReducedMotion) {
       setInterval(function() {
         goToTestimonial(currentTestimonial < totalTestimonials - 1 ? currentTestimonial + 1 : 0);
@@ -232,13 +252,11 @@
       var item = btn.closest('.faq-item');
       var answer = item.querySelector('.faq-answer');
       var isActive = item.classList.contains('active');
-      // Close all
       document.querySelectorAll('.faq-item.active').forEach(function(openItem) {
         openItem.classList.remove('active');
         openItem.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
         openItem.querySelector('.faq-answer').style.maxHeight = '0';
       });
-      // Open clicked
       if (!isActive) {
         item.classList.add('active');
         btn.setAttribute('aria-expanded', 'true');
@@ -246,34 +264,6 @@
       }
     });
   });
-
-  // === NEWSLETTER FORM ===
-  var newsletterForm = document.getElementById('newsletterForm');
-  if (newsletterForm) {
-    newsletterForm.addEventListener('submit', function(e) {
-      e.preventDefault();
-      var emailInput = newsletterForm.querySelector('input[type="email"]');
-      var status = document.getElementById('newsletterStatus');
-      var email = emailInput.value.trim();
-      if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-        status.textContent = 'Please enter a valid email address.';
-        status.className = 'newsletter-status';
-        status.style.color = '#ef4444';
-        return;
-      }
-      var btn = newsletterForm.querySelector('button');
-      btn.disabled = true;
-      btn.innerHTML = '<span>Subscribing...</span>';
-      setTimeout(function() {
-        status.textContent = 'Welcome aboard! Check your inbox for confirmation.';
-        status.className = 'newsletter-status';
-        status.style.color = '#34d399';
-        emailInput.value = '';
-        btn.disabled = false;
-        btn.innerHTML = '<span>Subscribe</span><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M2 8H14M14 8L9 3M14 8L9 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>';
-      }, 1200);
-    });
-  }
 
   // === CONTACT FORM ===
   var contactForm = document.getElementById('contactForm');
@@ -300,7 +290,6 @@
       return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
     }
 
-    // Live validation - clear errors on input
     ['contactName', 'contactEmail', 'contactService', 'contactMessage'].forEach(function(id) {
       var el = document.getElementById(id);
       if (el) {
@@ -347,7 +336,7 @@
     });
   }
 
-  // === TYPING EFFECT ON HERO (subtle) ===
+  // === TYPING EFFECT ON HERO ===
   var heroBadge = document.querySelector('.hero-badge');
   if (heroBadge && !prefersReducedMotion) {
     var badgeText = heroBadge.textContent;
@@ -363,21 +352,14 @@
     setTimeout(typeBadge, 500);
   }
 
-  // === BACK TO TOP (shows after scroll) ===
+  // === BACK TO TOP ===
   var backToTop = document.createElement('button');
   backToTop.className = 'back-to-top';
   backToTop.innerHTML = '<svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M10 16V4M10 4L5 9M10 4L15 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>';
   backToTop.setAttribute('aria-label', 'Back to top');
-  backToTop.style.cssText = 'position:fixed;bottom:32px;right:32px;width:48px;height:48px;border-radius:50%;background:rgba(167,139,250,0.9);color:white;border:none;display:flex;align-items:center;justify-content:center;cursor:pointer;z-index:999;opacity:0;transform:translateY(20px);transition:all 0.3s ease;backdrop-filter:blur(10px);';
   document.body.appendChild(backToTop);
   window.addEventListener('scroll', throttle(function() {
-    if (window.scrollY > 500) {
-      backToTop.style.opacity = '1';
-      backToTop.style.transform = 'translateY(0)';
-    } else {
-      backToTop.style.opacity = '0';
-      backToTop.style.transform = 'translateY(20px)';
-    }
+    backToTop.classList.toggle('visible', window.scrollY > 500);
   }, 100));
   backToTop.addEventListener('click', function() {
     window.scrollTo({ top: 0, behavior: prefersReducedMotion ? 'auto' : 'smooth' });
